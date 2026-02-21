@@ -25,7 +25,7 @@
 }
 
 * {
-  /* @apply outline-1 outline-blue-500; */
+  @apply outline-1 outline-blue-500;
 }
 
 body {

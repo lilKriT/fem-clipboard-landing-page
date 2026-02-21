@@ -1,35 +1,12 @@
 import Image from "next/image";
 import Hero from "./_sections/Hero";
+import KeepTrack from "./_sections/KeepTrack";
 
 export default function Home() {
   return (
     <section className="min-h-dvh w-full flex flex-col justify-center items-center">
-      <Hero />
-
-      <p>Keep track of your snippets</p>
-
-      <p>
-        Clipboard instantly stores any item you copy in the cloud, meaning you
-        can access your snippets immediately on all your devices. Our Mac and
-        iOS apps will help you organize everything.
-      </p>
-
-      <p>Quick Search</p>
-
-      <p>
-        Easily search your snippets by content, category, web address,
-        application, and more.
-      </p>
-
-      <p>iCloud Sync</p>
-
-      <p>Instantly saves and syncs snippets across all your devices.</p>
-
-      <p>Complete History</p>
-
-      <p>
-        Retrieve any snippets from the first moment you started using the app.
-      </p>
+      {/* <Hero /> */}
+      <KeepTrack />
 
       <p>Access Clipboard anywhere</p>
 
