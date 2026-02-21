@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baiJamjuree.variable} antialiased`}>{children}</body>
+      <body className={`${baiJamjuree.variable} antialiased`}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

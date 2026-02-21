@@ -1,16 +1,10 @@
 import Image from "next/image";
+import Hero from "./_sections/Hero";
 
 export default function Home() {
   return (
-    <div className="">
-      <p>A history of everything you copy</p>
-
-      <p>
-        Clipboard allows you to track and organize everything you copy.
-        Instantly access your clipboard on all your devices.
-      </p>
-
-      <p>Download for iOS Download for Mac</p>
+    <section className="min-h-dvh w-full flex flex-col justify-center items-center">
+      <Hero />
 
       <p>Keep track of your snippets</p>
 
@@ -73,6 +67,6 @@ export default function Home() {
       <p>Download for iOS Download for Mac</p>
 
       <p>FAQs Contact Us Privacy Policy Press Kit Install Guide</p>
-    </div>
+    </section>
   );
 }

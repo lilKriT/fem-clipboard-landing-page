@@ -1,30 +1,49 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); */
 
   /* Font size 18px */
   --text-base: 1.125rem;
+  --font-sans: var(--font-bai-jamjuree);
 
   /* Primary colors */
   --color-green-500: hsl(171, 66%, 44%);
-  --color-blue-100: hsl(233, 100%, 69%);
+  --color-blue-500: hsl(233, 100%, 69%);
 
   /* Neutral colors */
   --color-gray-700: hsl(210, 10%, 33%);
   --color-gray-500: hsl(201, 11%, 66%);
 }
 
+* {
+  /* @apply outline-1 outline-blue-500; */
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-white);
+  color: var(--color-gray-700);
+  font-size: var(--text-base);
+  font-family: var(--font-bai-jamjuree), Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  @apply text-white text-xl font-semibold px-8 py-4;
+  @apply rounded-full border-b-4 shadow-[0px_5px_25px_5px];
+}
+
+.btn--green {
+  @apply bg-green-500 border-green-700 shadow-green-500/30;
+}
+
+.btn--purple {
+  @apply bg-blue-500 border-blue-700 shadow-blue-700/30;
 }
