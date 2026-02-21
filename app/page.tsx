@@ -1,19 +1,14 @@
 import Image from "next/image";
 import Hero from "./_sections/Hero";
 import KeepTrack from "./_sections/KeepTrack";
+import AccessAnywhere from "./_sections/AccessAnywhere";
 
 export default function Home() {
   return (
     <section className="min-h-dvh w-full flex flex-col justify-center items-center">
       {/* <Hero /> */}
-      <KeepTrack />
-
-      <p>Access Clipboard anywhere</p>
-
-      <p>
-        Whether you’re on the go, or at your computer, you can access all your
-        Clipboard snippets in a few simple clicks.
-      </p>
+      {/* <KeepTrack /> */}
+      <AccessAnywhere />
 
       <p>Supercharge your workflow</p>
 
