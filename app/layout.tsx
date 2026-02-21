@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const baiJamjuree = Bai_Jamjuree({
+  variable: "--font-bai-jamjuree",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "600"],
 });
 
 export const metadata: Metadata = {
@@ -24,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${baiJamjuree.variable} antialiased`}>{children}</body>
     </html>
   );
 }
