@@ -3,9 +3,9 @@ import Image from "next/image";
 const AccessAnywhere = () => {
   return (
     <section className="flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center my-32 gap-32">
+      <div className="flex flex-col justify-center items-center mt-32 gap-32">
         {/* Text */}
-        <div className="text-center max-w-[60ch]">
+        <div className="flex flex-col justify-center items-center text-center max-w-[60ch] gap-8">
           <h2 className="text-4xl font-semibold">Access Clipboard anywhere</h2>
           <p className="text-gray-500">
             Whether you’re on the go, or at your computer, you can access all
@@ -19,7 +19,7 @@ const AccessAnywhere = () => {
           alt="Devices you can use Clipboard on"
           width={905}
           height={575}
-          className=""
+          className="w-[80dvw] max-w-6xl"
         />
       </div>
     </section>

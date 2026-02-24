@@ -3,7 +3,7 @@ import Image from "next/image";
 const KeepTrack = () => {
   return (
     <section className="min-h-dvh w-full flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-20 my-32">
+      <div className="flex flex-col justify-center items-center gap-20">
         {/* Top part */}
         <div className="text-center flex flex-col gap-8">
           <h2 className="text-4xl font-semibold">

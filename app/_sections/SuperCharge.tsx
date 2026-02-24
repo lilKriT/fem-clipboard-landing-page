@@ -3,7 +3,7 @@ import Image from "next/image";
 const SuperCharge = () => {
   return (
     <section className="flex justify-center items-center">
-      <div className="max-w-7xl flex flex-col items-center justify-center text-center gap-16 my-32">
+      <div className="max-w-7xl flex flex-col items-center justify-center text-center gap-16 mt-32">
         {/* First row */}
         <div className="flex flex-col justify-center items-center gap-8">
           <h2 className="text-4xl font-semibold">Supercharge your workflow</h2>

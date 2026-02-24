@@ -3,7 +3,7 @@ import Link from "next/link";
 const CTA = () => {
   return (
     <section className="flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-8">
+      <div className="flex flex-col justify-center items-center gap-8 mt-40">
         <h2 className="text-4xl font-semibold text-gray-700 text-center">
           Clipboard for iOS and Mac OS
         </h2>

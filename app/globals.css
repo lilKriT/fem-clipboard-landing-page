@@ -63,3 +63,9 @@ body {
     @apply text-gray-500;
   }
 }
+
+.footerLinks {
+  a {
+    @apply px-2 py-1 font-semibold text-gray-700/70;
+  }
+}
