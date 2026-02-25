@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="min-h-dvh w-full flex justify-center items-center bg-[linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1)),url(/bg-header-mobile.png)] lg:bg-[linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1)),url(/bg-header-desktop.png)] bg-top bg-no-repeat bg-cover">
+    <section className="min-h-dvh w-full flex justify-center items-center bg-[linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1)),url(/bg-header-mobile.png)] lg:bg-[linear-gradient(rgba(0,0,0,0),rgba(255,255,255,1)),url(/bg-header-desktop.png)] bg-top bg-no-repeat bg-cover py-8">
       <div className="flex flex-col justify-center items-center gap-16 mx-8 mt-40 lg:mt-2">
         <Image
           src={"/logo.svg"}
