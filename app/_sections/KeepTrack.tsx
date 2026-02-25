@@ -3,10 +3,10 @@ import Image from "next/image";
 const KeepTrack = () => {
   return (
     <section className="min-h-dvh w-full flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-20">
+      <div className="flex flex-col justify-center items-center gap-20 mt-20">
         {/* Top part */}
-        <div className="text-center flex flex-col gap-8">
-          <h2 className="text-4xl font-semibold">
+        <div className="text-center flex flex-col gap-8 mx-8">
+          <h2 className="text-[clamp(1.875rem,5vw,2.25rem)] font-semibold">
             Keep track of your snippets
           </h2>
 
@@ -18,18 +18,18 @@ const KeepTrack = () => {
         </div>
 
         {/* Bottom part */}
-        <div className="w-dvw grid grid-cols-2 gap-32 items-center">
+        <div className="w-dvw grid lg:grid-cols-2 gap-8 lg:gap-32 items-center px-8 lg:px-0">
           {/* Left column */}
           <Image
             src={"/image-computer.png"}
             alt="A computer monitor"
             width={752}
             height={572}
-            className="scale-105 origin-right"
+            className="lg:scale-105 lg:origin-right mx-auto w-full"
           />
 
           {/* Right column */}
-          <div className="flex flex-col justify-center items-start gap-12">
+          <div className="flex flex-col justify-center items-center lg:items-start gap-12 text-center lg:text-left">
             <div className="flex flex-col gap-4">
               <h3 className="text-2xl text-gray-700 font-semibold">
                 Quick Search

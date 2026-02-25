@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full flex justify-center items-center bg-gray-50 mt-32">
-      <div className="w-full max-w-7xl flex justify-center items-center my-12">
+      <div className="w-full max-w-7xl flex flex-col md:flex-row justify-center items-center mx-8 my-12 gap-8">
         <Image
           src={"/logo.svg"}
           alt="Clipboard Logo"
@@ -12,16 +12,26 @@ const Footer = () => {
           height={125}
           className="h-20 w-auto"
         />
-        <div className="footerLinks grid grid-rows-2 grid-flow-col ml-32 gap-x-16 gap-y-2">
-          <Link href={"/#"}>FAQs</Link>
-          <Link href={"/#"}>Contact Us</Link>
-          <Link href={"/#"}>Privacy Policy</Link>
-          <Link href={"/#"}>Press Kit</Link>
-          <Link href={"/#"}>Install Guide</Link>
+        <div className="footerLinks grid  md:grid-rows-2 md:grid-flow-col md:ml-[clamp(4rem,5vw,8rem)] gap-x-[clamp(2rem,5vw,4rem)] gap-y-2 text-center md:text-left">
+          <Link href={"/#"} className="">
+            FAQs
+          </Link>
+          <Link href={"/#"} className="">
+            Contact Us
+          </Link>
+          <Link href={"/#"} className="">
+            Privacy Policy
+          </Link>
+          <Link href={"/#"} className="">
+            Press Kit
+          </Link>
+          <Link href={"/#"} className="">
+            Install Guide
+          </Link>
         </div>
 
         {/* Social media */}
-        <div className="flex justify-center items-center gap-4 ml-auto">
+        <div className="flex justify-center items-center gap-4 md:ml-auto">
           <Link href={"/#"}>
             <svg
               height={30}

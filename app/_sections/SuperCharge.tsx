@@ -3,7 +3,7 @@ import Image from "next/image";
 const SuperCharge = () => {
   return (
     <section className="flex justify-center items-center">
-      <div className="max-w-7xl flex flex-col items-center justify-center text-center gap-16 mt-32">
+      <div className="max-w-7xl flex flex-col items-center justify-center text-center gap-16 mx-8 mt-32">
         {/* First row */}
         <div className="flex flex-col justify-center items-center gap-8">
           <h2 className="text-4xl font-semibold">Supercharge your workflow</h2>
@@ -14,7 +14,7 @@ const SuperCharge = () => {
         </div>
 
         {/* Second row */}
-        <div className="grid grid-cols-3 justify-center items-start gap-16">
+        <div className="grid lg:grid-cols-3 justify-center items-start gap-16">
           {/* First article */}
           <article className="supercharge__article">
             <Image
@@ -66,12 +66,13 @@ const SuperCharge = () => {
         </div>
 
         {/* Third Row */}
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex flex-col sm:flex-row sm:flex-wrap justify-center items-center sm:justify-between gap-8">
           <Image
             src={"/logo-google.png"}
             alt="Google Logo"
             width={165}
             height={49}
+            className=""
           />
 
           <Image
@@ -79,6 +80,7 @@ const SuperCharge = () => {
             alt="Google Logo"
             width={139}
             height={51}
+            className=""
           />
 
           <Image
@@ -86,6 +88,7 @@ const SuperCharge = () => {
             alt="Google Logo"
             width={161}
             height={35}
+            className=""
           />
 
           <Image
@@ -93,6 +96,7 @@ const SuperCharge = () => {
             alt="Google Logo"
             width={135}
             height={56}
+            className=""
           />
 
           <Image
@@ -100,6 +104,7 @@ const SuperCharge = () => {
             alt="Google Logo"
             width={125}
             height={30}
+            className=""
           />
         </div>
       </div>
